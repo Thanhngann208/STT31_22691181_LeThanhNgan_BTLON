@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NEWTECH Laptop Shop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* CSS để chỉnh sửa banner */
+        #small-banner {
+            width: 200px; /* Thay đổi kích thước banner */
+            position: absolute;
+            top: 10px; /* Cách từ trên */
+            right: 15px; /* Cách từ bên phải */
+            z-index: 10; /* Đảm bảo banner hiển thị trên các phần khác */
+        }
+
+        .header {
+            position: relative; /* Cần thiết để định vị banner */
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh điều hướng -->
+    <div class="container-md">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="../html/home.html">NEWTECH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../html/home.html">Trang Chủ</a>
+                        </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="sitemap.html">Sitemap</a>
+                  </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="../html/home.html">Sản phẩm</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/GDchinh/theodoidonhang.html">Theo dõi đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/GDchinh/phanhoi.html">Phản hồi</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="user_box"> 
+                                <a class="nav-link" href="../html/GDchinh/dangky.html" id="register_user"> Đăng ký </a>
+                                <div class="nav-link" id="kytu"> / </div>
+                                <a class="nav-link" href="../html/GDchinh/dangnhap.html" id="login_user"> Đăng nhập</a>
+                            
+                              </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Banner và thanh tìm kiếm -->
+        <div class="row">
+            <div class="header text-center">
+                <img id="logo" src="../img/logo.png" alt="Laptop Banner" usemap="#imageMap">
+                <map name="imageMap">
+                    <area shape="rect" coords="0,0,100,100" href="home.html" alt="home">
+                    <area shape="rect" coords="534,18,693,91" href="https:/www.google.com/maps/place/12+Nguyen+Van+Bao" alt="diachi">
+                </map>
+
+                <!-- Banner nhỏ bên góc phải -->
+                <img id="small-banner" src="../img/banner.png" alt="Banner Nhỏ">
+                
+                <div class="search">
+                    <input type="text" placeholder="Tìm laptop...">
+                    <button type="search"><img src="../img/timkiem.png" alt="Search"></button>
+                    <button type="search"><img src="../img/giohangg.png" alt="Cart" id="giohang" title="Giỏ hàng" onclick="window.location.href='../html/GDchinh/dangnhap.html'"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container payment-container">
+            <h2 class="text-center">Thanh Toán</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="payment-form" id="paymentForm">
+                        <div class="form-group">
+                            <label for="name">Tên chủ thẻ</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nhập tên chủ thẻ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cardNumber">Số thẻ</label>
+                            <input type="text" class="form-control" id="cardNumber" placeholder="Nhập số thẻ" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiryDate">Ngày hết hạn</label>
+                            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Số tiền thanh toán</label>
+                            <input type="text" class="form-control" id="amount" placeholder="Nhập số tiền" required>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block payment-btn">Thanh toán</button>
+                    </form>
+                    <div id="paymentResult" class="alert alert-success mt-3 d-none">Thanh toán thành công!</div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // Xử lý sự kiện khi nhấn nút thanh toán
+            document.getElementById('paymentForm').addEventListener('submit', function (event) {
+                event.preventDefault();  // Ngăn form reload lại trang
+        
+                // Giả lập thanh toán thành công
+                document.getElementById('paymentResult').classList.remove('d-none');
+                document.getElementById('paymentResult').innerText = 'Thanh toán thành công!';
+            });
+        </script>
+   
+   
+    <div class="row footer">
+        <div class="col-md-12 footer-content">
+          <p>Địa chỉ: 12 Nguyễn Văn Bảo, Gò Vấp, Thành phố HCM</p>
+          <p>Số điện thoại: 0354 332 500 - Email: 22691181.ngan@student.iuh.edu.vn</p>
+          
+          <div class="footer-links">
+            <a href="../html/home.html">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Thông tin</a>
+            <a href="#">Chính sách bảo hành</a>
+            <a href="../html/sitemap.html">Sitemap</a>
+      </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

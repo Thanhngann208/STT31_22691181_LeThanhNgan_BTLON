@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NEWTECH</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-md">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <a class="navbar-brand" href="../home.html">NEWTECH</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../home.html">Trang Chủ</a>
+                            <li class="nav-item">
+                              <a class="nav-link" href="../sitemap.html">Sitemap</a>
+                          </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../html/GDchinh/theodoidonhang.html">Theo dõi đơn hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../html/GDchinh/phanhoi.html">Phản hồi</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="user_box"> 
+                                <a class="nav-link" href="../../html/GDchinh/dangky.html" id="register_user"> Đăng ký </a>
+                                <div class="nav-link" id="kytu"> / </div>
+                                <a class="nav-link" href="../../html/GDchinh/dangnhap.html" id="login_user"> Đăng nhập</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="header">
+                <img id="logo" src="../../img/logo.png" alt="banner" usemap="#imageMap">
+                <map name="imageMap">
+                    <area shape="rect" coords="0,0,100,100" href="../home.html" alt="home">
+                    <area shape="rect" coords="534,18,693,91" href="https://www.google.com/maps/place/12+Nguy%E1%BB%85n+V%C4%83n+B%E1%BA%A3o/@10.8223799,106.6848045,16.5z/data=!4m7!3m6!1s0x317528e5496d03cf:0xa5b8e7395ec636b9!4b1!8m2!3d10.8222053!4d106.6874994!16s%2Fg%2F11gd39c82c?hl=vi-VN&entry=ttu" alt="diachi">
+                </map>
+                <div class="search">
+                <input type="text"  placeholder="Tìm sản phẩm...">
+                <button type="search"><img src="../../img/timkiem.png" alt="Search"></button>
+                <button type="search"><img src="../../img/giohangg.png" alt="gio" id="giohang" title="giỏ hàng" onclick="window.location.href='../../html/GDchinh/dangnhap.html'"></button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Danh mục sản phẩm laptop theo nhu cầu -->
+        <div class="row">
+          <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Microsoft Surface
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../../html/Microsoft Surface/Sunface Pro.html">Surface Pro</a>
+                          <a class="dropdown-item" href="../../html/Microsoft Surface/Sunface Go.html">Surface Go</a>
+                          <a class="dropdown-item" href="../../html/Microsoft Surface/Surface Laptop Studio.html">Surface Laptop Studio</a>
+                          <a class="dropdown-item" href="../../html/Microsoft Surface/Surface Laptop.html">Surface Laptop</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Lenovo
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../../html/Lenovo/Thinkpad X1 Carbonn.html">Thinkpad X1 carbon</a>
+                          <a class="dropdown-item" href="../../html/Lenovo/Thinkpad T14.html">Thinkpad T14</a>
+                        </div>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dell
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../../html/Dell/Dell XPS.html">Dell XPS</a>
+                         
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          LG Gram
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../../html/LG Gram/LG 2024.html">LG Gram 2024</a>
+                          <a class="dropdown-item" href="../../html/LG Gram/LG 2023.html">LG Gram 2023</a>
+                          <a class="dropdown-item" href="../../html/LG Gram/LG Gram 14.html">LG Gram 14</a>
+                          <a class="dropdown-item" href="../../html/LG Gram/LG Gram 16.html">LG Gram 16 </a>
+                          <a class="dropdown-item" href="../../html/LG Gram/LG Gram 17.html">LG Gram 17 </a>
+              
+                        </div>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          HP
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="../../html/HP/HP Probook.html">HP Probook</a>
+                          <a class="dropdown-item" href="../../html/HP/HP Elitebook.html">HP Elitebook</a>
+                         
+                        </div>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sản Phẩm Nổi Bật
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="/html/Sanphamnoibat.html/Best seller.html">Laptop Bán Chạy</a>
+                          <a class="dropdown-item" href="/html/Sanphamnoibat.html/New.html">Laptop Mới Nhất</a>
+                        </div>
+                      </li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+      </div>
+
+      <!-- Sản phẩm bán chạy nhất -->
+      <div class="row">
+        <div class="col-12 banchay">
+          <h1>Laptop Bán Chạy Nhất!</h1>
+          <p>Khám phá những dòng laptop được ưa chuộng nhất trong tháng này.</p>
+        </div>
+      </div>
+      <div class="row sp">
+        <!-- Sản phẩm mẫu 1 -->
+        <div class="col-md-3">
+          <div class="product-box">
+            <a href="../../html/HP/HP Probook.html">
+              <img src="../../img/HP-PRO(1).png" alt="Laptop HP PROBOOK 440 G10 i5 1335U 8GB 512GB 14″ (873A8PA)" class="product-img">
+            </a>
+            <h5 class="text-center" id="tensp">Laptop HP PROBOOK 440 G10 i5 1335U 8GB 512GB 14″ (873A8PA)</h5>
+            <p class="text-center" id="gia">19.290.000₫
+      </p>
+            <div class="text-center">
+              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm mẫu 2 -->
+        <div class="col-md-3">
+          <div class="product-box">
+            <a href="../../html/HP/HP Probook.html">
+              <img src="../../img/HP PRO(2).png" alt="HP" class="product-img">
+            </a>
+            <h5 class="text-center" id="tensp">Laptop HP PROBOOK 440 G10 i7 1335U 16GB 512GB 14″ (9H8U9PT)</h5>
+            <p class="text-center" id="gia">24.490.000₫</p>
+            <div class="text-center">
+              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+               <!-- Sản phẩm mẫu 3 -->
+        <div class="col-md-3">
+          <div class="product-box">
+            <a href="../../html/HP/HP Probook.html">
+              <img src="../../img/HP-PRO(3).png" alt="HP" class="product-img">
+            </a>
+            <h5 class="text-center" id="tensp">Laptop HP PROBOOK 450 G10 i5 1340P 8GB 512GB 15.6″ (873J6PA)</h5>
+            <p class="text-center" id="gia">20.490.000₫</p>
+            <div class="text-center">
+              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+              
+     <!-- Sản phẩm mẫu 4 -->
+     <div class="col-md-3">
+      <div class="product-box">
+        <a href="../../html/HP/HP Probook.html">
+          <img src="../../img/HP-PRO(4).png" alt="HP" class="product-img">
+        </a>
+        <h5 class="text-center" id="tensp">Laptop HP PROBOOK 450 G9 I7 1255U 8GB 512GB 15.6″ (6M0Z8PA)</h5>
+        <p class="text-center" id="gia">20.790.000₫</p>
+        <div class="text-center">
+          <button class="btn btn-primary">Xem chi tiết</button>
+          <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+           <!-- Sản phẩm mẫu 5 -->
+        <div class="col-md-3">
+          <div class="product-box">
+            <a href="../../html/HP/HP Probook.html">
+              <img src="../../img/HP PRO(5).jpg" alt="Laptop HP 240 G8 i3 1115G4 4GB 256GB 14″ (617K7PA)" class="product-img">
+            </a>
+            <h5 class="text-center" id="tensp">Laptop HP 240 G8 i3 1115G4 4GB 256GB 14″ (617K7PA)</h5>
+            <p class="text-center" id="gia">9.590.000₫
+      </p>
+            <div class="text-center">
+              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+        <!-- Sản phẩm mẫu 6 -->
+        <div class="col-md-3">
+          <div class="product-box">
+            <a href="../../html/HP/HP Probook.html">
+              <img src="../../img/HP PRO(6).jpg" alt="HP" class="product-img">
+            </a>
+            <h5 class="text-center" id="tensp">Laptop HP 15S FQ5228TU i3 1215U 8GB 512GB 15.6″ (8U240PA)</h5>
+            <p class="text-center" id="gia">11.990.000₫</p>
+            <div class="text-center">
+              <button class="btn btn-primary">Xem chi tiết</button>
+              <button class="btn btn-success" onclick="window.location.href='../GDchinh/dangnhap.html'">Thêm vào giỏ hàng</button>
+            </div>
+          </div>
+        </div>
+           
+</div>
+<div class="row footer">
+  <div class="col-md-12 footer-content">
+    <p>Địa chỉ: 12 Nguyễn Văn Bảo, Gò Vấp, Thành phố HCM</p>
+    <p>Số điện thoại: 0354 332 500 - Email: 22691181.ngan@student.iuh.edu.vn</p>
+    <div class="footer-links">
+      <a href="../home.html">Trang chủ</a>
+      <a href="#">Sản phẩm</a>
+      <a href="#">Thông tin</a>
+      <a href="#">Chính sách bảo hành</a>
+      <a href="../sitemap.html">Sitemap</a>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
